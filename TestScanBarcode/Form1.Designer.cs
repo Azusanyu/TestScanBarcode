@@ -44,26 +44,28 @@
             this.camInput.AutoSize = true;
             this.camInput.Font = new System.Drawing.Font("Times New Roman", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.camInput.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
-            this.camInput.Location = new System.Drawing.Point(446, 9);
+            this.camInput.Location = new System.Drawing.Point(125, 21);
             this.camInput.Name = "camInput";
-            this.camInput.Size = new System.Drawing.Size(198, 32);
+            this.camInput.Size = new System.Drawing.Size(246, 32);
             this.camInput.TabIndex = 0;
-            this.camInput.Text = "Camera Input :";
+            this.camInput.Text = "Chọn thiết bị Scan:";
             // 
             // showVideo
             // 
             this.showVideo.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.showVideo.Location = new System.Drawing.Point(127, 59);
+            this.showVideo.Location = new System.Drawing.Point(111, 73);
             this.showVideo.Name = "showVideo";
-            this.showVideo.Size = new System.Drawing.Size(1109, 553);
+            this.showVideo.Size = new System.Drawing.Size(763, 431);
             this.showVideo.TabIndex = 2;
             this.showVideo.TabStop = false;
             // 
             // buttStar
             // 
+            this.buttStar.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttStar.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
             this.buttStar.Location = new System.Drawing.Point(12, 92);
             this.buttStar.Name = "buttStar";
-            this.buttStar.Size = new System.Drawing.Size(109, 54);
+            this.buttStar.Size = new System.Drawing.Size(93, 54);
             this.buttStar.TabIndex = 3;
             this.buttStar.Text = "Start";
             this.buttStar.UseVisualStyleBackColor = true;
@@ -71,9 +73,11 @@
             // 
             // buttStop
             // 
+            this.buttStop.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttStop.ForeColor = System.Drawing.Color.Red;
             this.buttStop.Location = new System.Drawing.Point(12, 192);
             this.buttStop.Name = "buttStop";
-            this.buttStop.Size = new System.Drawing.Size(109, 56);
+            this.buttStop.Size = new System.Drawing.Size(93, 56);
             this.buttStop.TabIndex = 4;
             this.buttStop.Text = "Pause";
             this.buttStop.UseVisualStyleBackColor = true;
@@ -81,39 +85,41 @@
             // 
             // textOutput
             // 
+            this.textOutput.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.textOutput.Font = new System.Drawing.Font("Times New Roman", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textOutput.ForeColor = System.Drawing.Color.Red;
-            this.textOutput.Location = new System.Drawing.Point(521, 632);
+            this.textOutput.Location = new System.Drawing.Point(406, 518);
             this.textOutput.Name = "textOutput";
-            this.textOutput.Size = new System.Drawing.Size(368, 53);
+            this.textOutput.Size = new System.Drawing.Size(289, 53);
             this.textOutput.TabIndex = 5;
             this.textOutput.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Times New Roman", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Font = new System.Drawing.Font("Times New Roman", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
-            this.label1.Location = new System.Drawing.Point(349, 640);
+            this.label1.Location = new System.Drawing.Point(105, 528);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(166, 32);
+            this.label1.Size = new System.Drawing.Size(272, 35);
             this.label1.TabIndex = 6;
-            this.label1.Text = "Text Ouput :";
+            this.label1.Text = "Mã phiếu bán hàng:";
             // 
             // comboBoxInputCam
             // 
+            this.comboBoxInputCam.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.comboBoxInputCam.FormattingEnabled = true;
-            this.comboBoxInputCam.Location = new System.Drawing.Point(640, 17);
+            this.comboBoxInputCam.Location = new System.Drawing.Point(377, 23);
             this.comboBoxInputCam.Name = "comboBoxInputCam";
-            this.comboBoxInputCam.Size = new System.Drawing.Size(318, 24);
+            this.comboBoxInputCam.Size = new System.Drawing.Size(318, 33);
             this.comboBoxInputCam.TabIndex = 7;
             // 
             // buttGetCodePBH
             // 
             this.buttGetCodePBH.Font = new System.Drawing.Font("Noto Serif JP", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttGetCodePBH.Location = new System.Drawing.Point(960, 632);
+            this.buttGetCodePBH.Location = new System.Drawing.Point(701, 518);
             this.buttGetCodePBH.Name = "buttGetCodePBH";
-            this.buttGetCodePBH.Size = new System.Drawing.Size(213, 56);
+            this.buttGetCodePBH.Size = new System.Drawing.Size(173, 56);
             this.buttGetCodePBH.TabIndex = 8;
             this.buttGetCodePBH.Text = "Lấy mã PBH";
             this.buttGetCodePBH.UseVisualStyleBackColor = true;
@@ -123,7 +129,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1260, 708);
+            this.ClientSize = new System.Drawing.Size(904, 590);
             this.Controls.Add(this.buttGetCodePBH);
             this.Controls.Add(this.comboBoxInputCam);
             this.Controls.Add(this.label1);
