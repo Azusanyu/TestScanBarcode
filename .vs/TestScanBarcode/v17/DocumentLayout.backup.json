@@ -3,16 +3,20 @@
   "WorkspaceRootPath": "C:\\Users\\huynh\\source\\repos\\TestScanBarcode\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{8078BCA0-57AF-45E2-8C3F-2FBE66867637}|TestScanBarcode\\TestScanBarcode.csproj|c:\\users\\huynh\\source\\repos\\testscanbarcode\\testscanbarcode\\showdataformha.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{8078BCA0-57AF-45E2-8C3F-2FBE66867637}|TestScanBarcode\\TestScanBarcode.csproj|solutionrelative:testscanbarcode\\showdataformha.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{8078BCA0-57AF-45E2-8C3F-2FBE66867637}|TestScanBarcode\\TestScanBarcode.csproj|C:\\Users\\huynh\\source\\repos\\TestScanBarcode\\testscanbarcode\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "AbsoluteMoniker": "D:0:0:{8078BCA0-57AF-45E2-8C3F-2FBE66867637}|TestScanBarcode\\TestScanBarcode.csproj|c:\\users\\huynh\\source\\repos\\testscanbarcode\\testscanbarcode\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{8078BCA0-57AF-45E2-8C3F-2FBE66867637}|TestScanBarcode\\TestScanBarcode.csproj|solutionrelative:testscanbarcode\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
       "AbsoluteMoniker": "D:0:0:{8078BCA0-57AF-45E2-8C3F-2FBE66867637}|TestScanBarcode\\TestScanBarcode.csproj|C:\\Users\\huynh\\source\\repos\\TestScanBarcode\\testscanbarcode\\showdataformha.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{8078BCA0-57AF-45E2-8C3F-2FBE66867637}|TestScanBarcode\\TestScanBarcode.csproj|solutionrelative:testscanbarcode\\showdataformha.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8078BCA0-57AF-45E2-8C3F-2FBE66867637}|TestScanBarcode\\TestScanBarcode.csproj|c:\\users\\huynh\\source\\repos\\testscanbarcode\\testscanbarcode\\showdataformha.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8078BCA0-57AF-45E2-8C3F-2FBE66867637}|TestScanBarcode\\TestScanBarcode.csproj|solutionrelative:testscanbarcode\\showdataformha.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8078BCA0-57AF-45E2-8C3F-2FBE66867637}|TestScanBarcode\\TestScanBarcode.csproj|C:\\Users\\huynh\\source\\repos\\TestScanBarcode\\testscanbarcode\\showdataformha.resx||{81828910-B8B3-4D2B-99A3-067027C180C1}",
+      "RelativeMoniker": "D:0:0:{8078BCA0-57AF-45E2-8C3F-2FBE66867637}|TestScanBarcode\\TestScanBarcode.csproj|solutionrelative:testscanbarcode\\showdataformha.resx||{81828910-B8B3-4D2B-99A3-067027C180C1}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{8078BCA0-57AF-45E2-8C3F-2FBE66867637}|TestScanBarcode\\TestScanBarcode.csproj|C:\\Users\\huynh\\source\\repos\\TestScanBarcode\\testscanbarcode\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -26,11 +30,11 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 15,
+          "SelectedChildIndex": 13,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 4,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\huynh\\source\\repos\\TestScanBarcode\\TestScanBarcode\\Program.cs",
               "RelativeDocumentMoniker": "TestScanBarcode\\Program.cs",
@@ -91,39 +95,53 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "ShowDataFormHa.cs",
-              "DocumentMoniker": "C:\\Users\\huynh\\source\\repos\\TestScanBarcode\\TestScanBarcode\\ShowDataFormHa.cs",
-              "RelativeDocumentMoniker": "TestScanBarcode\\ShowDataFormHa.cs",
-              "ToolTip": "C:\\Users\\huynh\\source\\repos\\TestScanBarcode\\TestScanBarcode\\ShowDataFormHa.cs",
-              "RelativeToolTip": "TestScanBarcode\\ShowDataFormHa.cs",
-              "ViewState": "AgIAALEAAAAAAAAAAAAiwLoAAAAJAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-20T06:38:09.473Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 0,
               "Title": "Form1.cs [Design]",
               "DocumentMoniker": "C:\\Users\\huynh\\source\\repos\\TestScanBarcode\\TestScanBarcode\\Form1.cs",
               "RelativeDocumentMoniker": "TestScanBarcode\\Form1.cs",
               "ToolTip": "C:\\Users\\huynh\\source\\repos\\TestScanBarcode\\TestScanBarcode\\Form1.cs [Design]",
               "RelativeToolTip": "TestScanBarcode\\Form1.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-20T06:29:40.369Z"
+              "WhenOpened": "2025-12-24T09:52:02.981Z",
+              "EditorCaption": " [Design]"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "ShowDataFormHa.cs [Design]",
+              "DocumentIndex": 2,
+              "Title": "ShowDataFormHa.Designer.cs",
+              "DocumentMoniker": "C:\\Users\\huynh\\source\\repos\\TestScanBarcode\\TestScanBarcode\\ShowDataFormHa.Designer.cs",
+              "RelativeDocumentMoniker": "TestScanBarcode\\ShowDataFormHa.Designer.cs",
+              "ToolTip": "C:\\Users\\huynh\\source\\repos\\TestScanBarcode\\TestScanBarcode\\ShowDataFormHa.Designer.cs",
+              "RelativeToolTip": "TestScanBarcode\\ShowDataFormHa.Designer.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-24T03:08:26.965Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "ShowDataFormHa.resx",
+              "DocumentMoniker": "C:\\Users\\huynh\\source\\repos\\TestScanBarcode\\TestScanBarcode\\ShowDataFormHa.resx",
+              "RelativeDocumentMoniker": "TestScanBarcode\\ShowDataFormHa.resx",
+              "ToolTip": "C:\\Users\\huynh\\source\\repos\\TestScanBarcode\\TestScanBarcode\\ShowDataFormHa.resx",
+              "RelativeToolTip": "TestScanBarcode\\ShowDataFormHa.resx",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001005|",
+              "WhenOpened": "2025-12-24T03:08:26.88Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "ShowDataFormHa.cs",
               "DocumentMoniker": "C:\\Users\\huynh\\source\\repos\\TestScanBarcode\\TestScanBarcode\\ShowDataFormHa.cs",
               "RelativeDocumentMoniker": "TestScanBarcode\\ShowDataFormHa.cs",
-              "ToolTip": "C:\\Users\\huynh\\source\\repos\\TestScanBarcode\\TestScanBarcode\\ShowDataFormHa.cs [Design]",
-              "RelativeToolTip": "TestScanBarcode\\ShowDataFormHa.cs [Design]",
+              "ToolTip": "C:\\Users\\huynh\\source\\repos\\TestScanBarcode\\TestScanBarcode\\ShowDataFormHa.cs",
+              "RelativeToolTip": "TestScanBarcode\\ShowDataFormHa.cs",
+              "ViewState": "AgIAAIEAAAAAAAAAAAA4wLoAAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-19T08:01:16.445Z",
-              "EditorCaption": " [Design]"
+              "WhenOpened": "2025-12-20T06:38:09.473Z",
+              "EditorCaption": ""
             }
           ]
         },

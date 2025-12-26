@@ -44,7 +44,7 @@
             this.camInput.AutoSize = true;
             this.camInput.Font = new System.Drawing.Font("Times New Roman", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.camInput.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
-            this.camInput.Location = new System.Drawing.Point(125, 21);
+            this.camInput.Location = new System.Drawing.Point(290, 22);
             this.camInput.Name = "camInput";
             this.camInput.Size = new System.Drawing.Size(246, 32);
             this.camInput.TabIndex = 0;
@@ -55,7 +55,7 @@
             this.showVideo.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.showVideo.Location = new System.Drawing.Point(111, 73);
             this.showVideo.Name = "showVideo";
-            this.showVideo.Size = new System.Drawing.Size(763, 431);
+            this.showVideo.Size = new System.Drawing.Size(941, 494);
             this.showVideo.TabIndex = 2;
             this.showVideo.TabStop = false;
             // 
@@ -88,7 +88,7 @@
             this.textOutput.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.textOutput.Font = new System.Drawing.Font("Times New Roman", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textOutput.ForeColor = System.Drawing.Color.Red;
-            this.textOutput.Location = new System.Drawing.Point(406, 518);
+            this.textOutput.Location = new System.Drawing.Point(406, 606);
             this.textOutput.Name = "textOutput";
             this.textOutput.Size = new System.Drawing.Size(289, 53);
             this.textOutput.TabIndex = 5;
@@ -99,7 +99,7 @@
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Times New Roman", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
-            this.label1.Location = new System.Drawing.Point(105, 528);
+            this.label1.Location = new System.Drawing.Point(105, 616);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(272, 35);
             this.label1.TabIndex = 6;
@@ -109,7 +109,7 @@
             // 
             this.comboBoxInputCam.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.comboBoxInputCam.FormattingEnabled = true;
-            this.comboBoxInputCam.Location = new System.Drawing.Point(377, 23);
+            this.comboBoxInputCam.Location = new System.Drawing.Point(542, 24);
             this.comboBoxInputCam.Name = "comboBoxInputCam";
             this.comboBoxInputCam.Size = new System.Drawing.Size(318, 33);
             this.comboBoxInputCam.TabIndex = 7;
@@ -117,7 +117,7 @@
             // buttGetCodePBH
             // 
             this.buttGetCodePBH.Font = new System.Drawing.Font("Noto Serif JP", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttGetCodePBH.Location = new System.Drawing.Point(701, 518);
+            this.buttGetCodePBH.Location = new System.Drawing.Point(701, 606);
             this.buttGetCodePBH.Name = "buttGetCodePBH";
             this.buttGetCodePBH.Size = new System.Drawing.Size(173, 56);
             this.buttGetCodePBH.TabIndex = 8;
@@ -129,7 +129,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(904, 590);
+            this.ClientSize = new System.Drawing.Size(1092, 685);
             this.Controls.Add(this.buttGetCodePBH);
             this.Controls.Add(this.comboBoxInputCam);
             this.Controls.Add(this.label1);
