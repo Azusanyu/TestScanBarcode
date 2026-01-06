@@ -17,7 +17,8 @@ namespace TestScanBarcode
         FilterInfoCollection filterInfoCollection;
         VideoCaptureDevice videoCaptureDevice;
 
-        bool isCaptured = false; // không cho chụp 2 lần liên tục
+        bool isCaptured = false; // không cho chụp  liên tục
+        bool scanForOpenForm = false; // chỉ quét để mở Form 2
 
         public Form1()
         {
@@ -38,16 +39,36 @@ namespace TestScanBarcode
                 comboBoxInputCam.SelectedIndex = 0;
             else
                 MessageBox.Show("Không tìm thấy camera nào!");
+            
         }
 
         private void buttStar_Click(object sender, EventArgs e)
         {
-            videoCaptureDevice = new VideoCaptureDevice(filterInfoCollection[comboBoxInputCam.SelectedIndex].MonikerString);
+            isCaptured = false;
+            StartCamera();
+        }
+        private void StartCamera()
+        {
+            if (videoCaptureDevice != null && videoCaptureDevice.IsRunning)
+                return;
+
+            videoCaptureDevice = new VideoCaptureDevice(
+                filterInfoCollection[comboBoxInputCam.SelectedIndex].MonikerString);
+
             videoCaptureDevice.NewFrame += VideoCaptureDevice_NewFrame;
             videoCaptureDevice.Start();
-
-            isCaptured = false;
         }
+
+        private void StopCamera()
+        {
+            if (videoCaptureDevice != null && videoCaptureDevice.IsRunning)
+            {
+                videoCaptureDevice.SignalToStop();
+                videoCaptureDevice.WaitForStop();
+                videoCaptureDevice.NewFrame -= VideoCaptureDevice_NewFrame;
+            }
+        }
+
 
         private void VideoCaptureDevice_NewFrame(object sender, NewFrameEventArgs eventArgs)
         {
@@ -72,22 +93,6 @@ namespace TestScanBarcode
             };
 
             var result = barcodeReader.Decode(bitmap);
-            // luu anh vao data
-            //if (result != null && !isCaptured)
-            //{
-            //    isCaptured = true;
-            //    string barcode = result.Text;
-
-            //    textOutput.Invoke(new MethodInvoker(delegate ()
-            //    {
-            //        textOutput.Text = barcode;
-            //    }));
-
-            //    SaveImageToDatabase(bitmap, barcode);
-
-            //    MessageBox.Show("Đã tự động chụp ảnh & lưu vào database!\nBarcode: " + barcode);
-
-            //}
             if (result != null && !isCaptured)
             {
                 isCaptured = true;
@@ -96,36 +101,44 @@ namespace TestScanBarcode
                 this.Invoke(new Action(() =>
                 {
                     textOutput.Text = barcode;
-
-                    // LƯU ẢNH + BARCODE
-                    SaveImageToDatabase(bitmap, barcode);
-
-                    // DỪNG CAMERA NGAY
-                    if (videoCaptureDevice != null && videoCaptureDevice.IsRunning)
+                    // ===== TRƯỜNG HỢP: QUÉT ĐEER TÌM PHIẾU =====
+                    if (scanForOpenForm)
                     {
-                        videoCaptureDevice.SignalToStop();
-                    }
+                        scanForOpenForm = false;
+                        
+                        this.Hide();
+                        using (ShowDataFormHa f2 = new ShowDataFormHa(barcode))
+                        {
+                            f2.ShowDialog();
+                        }
+                        this.Show();
 
-                    // MỞ FORM 2
-                    this.Hide();
-                    using (ShowDataFormHa f2 = new ShowDataFormHa(barcode))
+                        // KHÔNG tự quét lại
+                        textOutput.Clear();
+                        return;
+                    }
+                    else
                     {
-                        f2.ShowDialog();
+                        // LƯU ẢNH + BARCODE
+                        textOutput.Invoke(new MethodInvoker(delegate ()
+                        {
+                            textOutput.Text = barcode;
+                        }));
+                        SaveImageToDatabase(bitmap, barcode);
+                        MessageBox.Show("Đã tự động chụp ảnh & lưu vào database!\nBarcode: " + barcode);                    
+
+                        // ===== RESET NHƯ BAN ĐẦU =====
+                        textOutput.Clear();
+                        isCaptured = false;
+
+                        
                     }
-
-                    // FORM 2 ĐÓNG QUAY LẠI FORM 1
-                    this.Show();
-
-                    // reset để quét tiếp
-                    isCaptured = false;
-                    textOutput.Clear();
                 }));
             }
-
             showVideo.Image = bitmap;
         }
 
-
+        // LƯU ẢNH VÀO DATABASE
         private void SaveImageToDatabase(Bitmap bitmap, string soPhieu)
         {
             using (MemoryStream ms = new MemoryStream())
@@ -157,14 +170,12 @@ namespace TestScanBarcode
 
         private void buttStop_Click(object sender, EventArgs e)
         {
-            if (videoCaptureDevice != null && videoCaptureDevice.IsRunning)
-            {
-                videoCaptureDevice.Stop();
-                showVideo.Image = null;
-            }
-
-            isCaptured = false;
+            StopCamera();
+            showVideo.Image = null;
             textOutput.Clear();
+            isCaptured = false;
+            //dừng  xong rồi cho chạy lại 
+            //StartCamera();
         }
 
         private void Form1_FormClosing(object sender, FormClosingEventArgs e)
@@ -196,6 +207,12 @@ namespace TestScanBarcode
             //}
         }
 
-
+        private void button1_Click(object sender, EventArgs e)
+        {
+            scanForOpenForm = true;
+            isCaptured = false;        // cho phép quét
+            textOutput.Clear();
+            StartCamera();
+        }
     }
 }
