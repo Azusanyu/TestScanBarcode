@@ -124,7 +124,7 @@
             this.buttGetCodePBH.TabIndex = 8;
             this.buttGetCodePBH.Text = "Lấy mã PBH";
             this.buttGetCodePBH.UseVisualStyleBackColor = true;
-            this.buttGetCodePBH.Click += new System.EventHandler(this.buttGetCodePBH_Click);
+          
             // 
             // button1
             // 
