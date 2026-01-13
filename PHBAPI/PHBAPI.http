@@ -1,0 +1,6 @@
+@PHBAPI_HostAddress = http://localhost:5134
+
+GET {{PHBAPI_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
