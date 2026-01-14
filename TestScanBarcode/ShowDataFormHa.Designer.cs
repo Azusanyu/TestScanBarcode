@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             this.groupBox7 = new System.Windows.Forms.GroupBox();
+            this.butSave = new System.Windows.Forms.Button();
             this.checkXuatCL = new System.Windows.Forms.CheckBox();
             this.textSLTong = new System.Windows.Forms.TextBox();
             this.label19 = new System.Windows.Forms.Label();
@@ -84,7 +85,6 @@
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.butSave = new System.Windows.Forms.Button();
             this.dataGridViewPBH = new System.Windows.Forms.DataGridView();
             this.groupBox7.SuspendLayout();
             this.groupBox6.SuspendLayout();
@@ -111,6 +111,19 @@
             this.groupBox7.TabIndex = 21;
             this.groupBox7.TabStop = false;
             this.groupBox7.Enter += new System.EventHandler(this.groupBox7_Enter);
+            // 
+            // butSave
+            // 
+            this.butSave.BackColor = System.Drawing.Color.White;
+            this.butSave.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.butSave.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
+            this.butSave.Location = new System.Drawing.Point(171, 170);
+            this.butSave.Name = "butSave";
+            this.butSave.Size = new System.Drawing.Size(124, 40);
+            this.butSave.TabIndex = 23;
+            this.butSave.Text = "Save";
+            this.butSave.UseVisualStyleBackColor = false;
+            this.butSave.Click += new System.EventHandler(this.butSave_Click);
             // 
             // checkXuatCL
             // 
@@ -181,11 +194,11 @@
             // dateCan1
             // 
             this.dateCan1.CustomFormat = "dd/MM/yyyy HH:mm:ss";
-            this.dateCan1.Font = new System.Drawing.Font("Times New Roman", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dateCan1.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.dateCan1.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
             this.dateCan1.Location = new System.Drawing.Point(6, 78);
             this.dateCan1.Name = "dateCan1";
-            this.dateCan1.Size = new System.Drawing.Size(199, 25);
+            this.dateCan1.Size = new System.Drawing.Size(199, 27);
             this.dateCan1.TabIndex = 14;
             // 
             // groupBox8
@@ -211,11 +224,11 @@
             // dateCan2
             // 
             this.dateCan2.CustomFormat = "dd/MM/yyyy HH:mm:ss";
-            this.dateCan2.Font = new System.Drawing.Font("Times New Roman", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dateCan2.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.dateCan2.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
             this.dateCan2.Location = new System.Drawing.Point(224, 78);
             this.dateCan2.Name = "dateCan2";
-            this.dateCan2.Size = new System.Drawing.Size(195, 25);
+            this.dateCan2.Size = new System.Drawing.Size(195, 27);
             this.dateCan2.TabIndex = 13;
             // 
             // textNgCan2
@@ -603,26 +616,26 @@
             this.textCodePBH.Font = new System.Drawing.Font("Times New Roman", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textCodePBH.Location = new System.Drawing.Point(6, 37);
             this.textCodePBH.Name = "textCodePBH";
-            this.textCodePBH.Size = new System.Drawing.Size(271, 25);
+            this.textCodePBH.Size = new System.Drawing.Size(252, 25);
             this.textCodePBH.TabIndex = 11;
             // 
             // gioLap
             // 
             this.gioLap.CustomFormat = "HH:mm:ss";
-            this.gioLap.Font = new System.Drawing.Font("Times New Roman", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.gioLap.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.gioLap.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
             this.gioLap.Location = new System.Drawing.Point(413, 37);
             this.gioLap.Name = "gioLap";
-            this.gioLap.Size = new System.Drawing.Size(89, 25);
+            this.gioLap.Size = new System.Drawing.Size(89, 27);
             this.gioLap.TabIndex = 10;
             // 
             // ngayLap
             // 
-            this.ngayLap.Font = new System.Drawing.Font("Times New Roman", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ngayLap.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ngayLap.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.ngayLap.Location = new System.Drawing.Point(293, 37);
+            this.ngayLap.Location = new System.Drawing.Point(264, 37);
             this.ngayLap.Name = "ngayLap";
-            this.ngayLap.Size = new System.Drawing.Size(113, 25);
+            this.ngayLap.Size = new System.Drawing.Size(142, 27);
             this.ngayLap.TabIndex = 9;
             // 
             // nguoiLap
@@ -658,7 +671,7 @@
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Times New Roman", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(290, 18);
+            this.label2.Location = new System.Drawing.Point(261, 18);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(64, 17);
             this.label2.TabIndex = 1;
@@ -674,19 +687,6 @@
             this.label1.TabIndex = 0;
             this.label1.Text = "Số phiếu bán hàng";
             // 
-            // butSave
-            // 
-            this.butSave.BackColor = System.Drawing.Color.White;
-            this.butSave.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.butSave.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
-            this.butSave.Location = new System.Drawing.Point(171, 170);
-            this.butSave.Name = "butSave";
-            this.butSave.Size = new System.Drawing.Size(124, 40);
-            this.butSave.TabIndex = 23;
-            this.butSave.Text = "Save";
-            this.butSave.UseVisualStyleBackColor = false;
-            this.butSave.Click += new System.EventHandler(this.butSave_Click);
-            // 
             // dataGridViewPBH
             // 
             this.dataGridViewPBH.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
@@ -701,7 +701,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1365, 621);
+            this.ClientSize = new System.Drawing.Size(1348, 621);
             this.Controls.Add(this.dataGridViewPBH);
             this.Controls.Add(this.groupBox7);
             this.Controls.Add(this.groupBox6);

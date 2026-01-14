@@ -19,8 +19,8 @@ namespace TestScanBarcode
         FilterInfoCollection filterInfoCollection;
         VideoCaptureDevice videoCaptureDevice;
 
-        // --- CÁC BIẾN CỜ QUẢN LÝ TRẠNG THÁI ---
-        private volatile bool _isReading = false; // Cờ kiểm soát luồng đọc (quan trọng để tăng tốc)
+        
+        private volatile bool _isReading = false; 
         bool isCaptured = false; // Đã chụp thành công chưa
         bool scanForOpenForm = false; // Chế độ quét
 
@@ -36,7 +36,7 @@ namespace TestScanBarcode
             }
         };
 
-        // Định nghĩa vùng quét (Ví dụ: Một hình chữ nhật ở giữa màn hình)
+        // Định nghĩa vùng quét
         private Rectangle? _cropRect = null;
 
         public Form1()
