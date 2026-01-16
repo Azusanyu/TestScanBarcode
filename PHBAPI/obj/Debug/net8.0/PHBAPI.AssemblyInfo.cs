@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("PHBAPI")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+404220eb786c122800e852f63d1b8d3d5cada907")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+e7d5a4c65522b5e1ed732cbe0981e566d5d595fa")]
 [assembly: System.Reflection.AssemblyProductAttribute("PHBAPI")]
 [assembly: System.Reflection.AssemblyTitleAttribute("PHBAPI")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
