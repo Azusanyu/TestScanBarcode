@@ -25,12 +25,10 @@ namespace TestScanBarcode
             InitializeComponent();
             soct = _soct;   // gán vào biến toàn cục
         }
-
         private void ShowDataFormHa_Load(object sender, EventArgs e)
         {
             LoadDataFromBarcode();
         }
-
         private void LoadDataFromBarcode()
         {
             // ===== LẤY DỮ LIỆU TỪ MT32 LÊN TEXTBOX =====
@@ -189,9 +187,6 @@ namespace TestScanBarcode
                 }
             }
         }
-
-
-
         private void groupBox7_Enter(object sender, EventArgs e)
         {
 

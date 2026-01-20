@@ -35,15 +35,12 @@ namespace TestScanBarcode
                 TryInverted = false
             }
         };
-
         // Định nghĩa vùng quét
         private Rectangle? _cropRect = null;
-
         public Form1()
         {
             InitializeComponent();
         }
-
         private void Form1_Load(object sender, EventArgs e)
         {
             filterInfoCollection = new FilterInfoCollection(FilterCategory.VideoInputDevice);
@@ -57,14 +54,12 @@ namespace TestScanBarcode
             else
                 MessageBox.Show("Không tìm thấy camera nào!");
         }
-
         private void buttStar_Click(object sender, EventArgs e)
         {
             isCaptured = false;
             textOutput.Clear();
             StartCamera();
         }
-
         private void StartCamera()
         {
             if (videoCaptureDevice != null && videoCaptureDevice.IsRunning)
@@ -74,7 +69,6 @@ namespace TestScanBarcode
             videoCaptureDevice.NewFrame += VideoCaptureDevice_NewFrame;
             videoCaptureDevice.Start();
         }
-
         private void StopCamera()
         {
             if (videoCaptureDevice != null && videoCaptureDevice.IsRunning)
@@ -84,7 +78,6 @@ namespace TestScanBarcode
                 videoCaptureDevice.NewFrame -= VideoCaptureDevice_NewFrame;
             }
         }
-
         private void VideoCaptureDevice_NewFrame(object sender, NewFrameEventArgs eventArgs)
         {
             // 1. Lấy ảnh gốc để hiển thị
@@ -125,7 +118,6 @@ namespace TestScanBarcode
             Bitmap bitmapToProcess = (Bitmap)eventArgs.Frame.Clone();
             Task.Run(() => ProcessFrame(bitmapToProcess));
         }
-
         // Hàm xử lý ảnh
         private void ProcessFrame(Bitmap bitmap)
         {
@@ -164,7 +156,6 @@ namespace TestScanBarcode
                 _isReading = false;
             }
         }
-
         private void HandleBarcodeResult(string barcode, Bitmap evidenceImage)
         {
             isCaptured = true;
@@ -198,7 +189,6 @@ namespace TestScanBarcode
                 _isReading = false; // Cho phép đọc tiếp
             }
         }
-
         private void SaveImageToDatabase(Bitmap bitmap, string soPhieu)
         {
             try
@@ -230,7 +220,6 @@ namespace TestScanBarcode
                 MessageBox.Show("Lỗi lưu ảnh: " + ex.Message);
             }
         }
-
         private void buttStop_Click(object sender, EventArgs e)
         {
             StopCamera();
@@ -239,12 +228,10 @@ namespace TestScanBarcode
             isCaptured = false;
             _isReading = false;
         }
-
         private void Form1_FormClosing(object sender, FormClosingEventArgs e)
         {
             StopCamera();
         }
-
         private void button1_Click(object sender, EventArgs e)
         {
             scanForOpenForm = true;
