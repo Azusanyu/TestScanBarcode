@@ -98,6 +98,7 @@ namespace TestScanBarcode
 
                     string sql = @"
                     SELECT 
+                        dt.DT32ID,        
                         dt.SoDH,
                         dt.MaHH,
                         dt.TenHang,
@@ -117,6 +118,9 @@ namespace TestScanBarcode
                     da.Fill(dt);
 
                     dataGridViewPBH.DataSource = dt;
+
+                    // ===== ẨN CỘT ID =====
+                    dataGridViewPBH.Columns["DT32ID"].Visible = false;
                 }
 
                 dataGridViewPBH.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
@@ -125,8 +129,8 @@ namespace TestScanBarcode
             {
                 MessageBox.Show("Lỗi load DT32: " + ex.Message);
             }
-        }
 
+        }
         private void butSave_Click(object sender, EventArgs e)
         {
             using (SqlConnection conn = new SqlConnection(connStr))
@@ -136,55 +140,57 @@ namespace TestScanBarcode
 
                 try
                 {
-                    // ===== 1. UPDATE MT32 (Xuất chênh lệch) =====
-                    string sqlMT = @"
-                    UPDATE MT32 
-                    SET XuatChenhLech = @XuatCL
-                    WHERE SoCT = @SoCT";
-
-                    using (SqlCommand cmdMT = new SqlCommand(sqlMT, conn, tran))
+                    // ===== UPDATE MT32 =====
+                    using (SqlCommand cmdMT = new SqlCommand(
+                        @"UPDATE MT32 
+                  SET XuatChenhLech = @XuatCL 
+                  WHERE SoCT = @SoCT",
+                        conn, tran))
                     {
-                        cmdMT.Parameters.AddWithValue("@XuatCL", checkXuatCL.Checked);
-                        cmdMT.Parameters.AddWithValue("@SoCT", soct);
+                        cmdMT.Parameters.Add("@XuatCL", SqlDbType.Bit).Value = checkXuatCL.Checked;
+                        cmdMT.Parameters.Add("@SoCT", SqlDbType.VarChar).Value = soct;
                         cmdMT.ExecuteNonQuery();
                     }
 
-                    // ===== 2. UPDATE DT32 (SLThucNhan) =====
+                    // ===== UPDATE DT32 theo DT32ID (GUID) =====
                     foreach (DataGridViewRow row in dataGridViewPBH.Rows)
                     {
                         if (row.IsNewRow) continue;
+                        if (row.Cells["DT32ID"].Value == null) continue;
 
-                        string soDH = row.Cells["SoDH"].Value?.ToString();
-                        decimal slThucNhan = 0;
+                        Guid dt32ID = (Guid)row.Cells["DT32ID"].Value;
 
-                        if (row.Cells["SLThucNhan"].Value != DBNull.Value)
+                        object slThucNhan = DBNull.Value;
+                        if (row.Cells["SLThucNhan"].Value != null &&
+                            decimal.TryParse(row.Cells["SLThucNhan"].Value.ToString(), out decimal sl))
                         {
-                            decimal.TryParse(row.Cells["SLThucNhan"].Value.ToString(), out slThucNhan);
+                            slThucNhan = sl;
                         }
 
-                        string sqlDT = @"
-                        UPDATE DT32 
-                        SET SLThucNhan = @SLThucNhan
-                        WHERE SoDH = @SoDH";
-
-                        using (SqlCommand cmdDT = new SqlCommand(sqlDT, conn, tran))
+                        using (SqlCommand cmdDT = new SqlCommand(
+                            @"UPDATE DT32 
+                              SET SLThucNhan = @SLThucNhan
+                              WHERE DT32ID = @DT32ID",
+                            conn, tran))
                         {
-                            cmdDT.Parameters.AddWithValue("@SLThucNhan", slThucNhan);
-                            cmdDT.Parameters.AddWithValue("@SoDH", soDH);
+                            cmdDT.Parameters.Add("@SLThucNhan", SqlDbType.Decimal).Value = slThucNhan;
+                            cmdDT.Parameters.Add("@DT32ID", SqlDbType.UniqueIdentifier).Value = dt32ID;
                             cmdDT.ExecuteNonQuery();
                         }
                     }
 
                     tran.Commit();
-                    MessageBox.Show("✅ Cập nhật thành công!");
+                    MessageBox.Show("Đã cập nhật dữ liệu");
                 }
                 catch (Exception ex)
                 {
                     tran.Rollback();
-                    MessageBox.Show("❌ Lỗi khi lưu dữ liệu: " + ex.Message);
+                    MessageBox.Show("❌ Lỗi: " + ex.Message);
                 }
             }
         }
+
+
 
         private void groupBox7_Enter(object sender, EventArgs e)
         {
