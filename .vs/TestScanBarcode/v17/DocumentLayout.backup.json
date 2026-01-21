@@ -3,20 +3,28 @@
   "WorkspaceRootPath": "C:\\Users\\huynh\\source\\repos\\TestScanBarcode\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{8078BCA0-57AF-45E2-8C3F-2FBE66867637}|TestScanBarcode\\TestScanBarcode.csproj|C:\\Users\\huynh\\source\\repos\\TestScanBarcode\\testscanbarcode\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{8078BCA0-57AF-45E2-8C3F-2FBE66867637}|TestScanBarcode\\TestScanBarcode.csproj|solutionrelative:testscanbarcode\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{8078BCA0-57AF-45E2-8C3F-2FBE66867637}|TestScanBarcode\\TestScanBarcode.csproj|C:\\Users\\huynh\\source\\repos\\TestScanBarcode\\testscanbarcode\\showdataformha.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{8078BCA0-57AF-45E2-8C3F-2FBE66867637}|TestScanBarcode\\TestScanBarcode.csproj|solutionrelative:testscanbarcode\\showdataformha.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{8078BCA0-57AF-45E2-8C3F-2FBE66867637}|TestScanBarcode\\TestScanBarcode.csproj|c:\\users\\huynh\\source\\repos\\testscanbarcode\\testscanbarcode\\showdataformha.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{8078BCA0-57AF-45E2-8C3F-2FBE66867637}|TestScanBarcode\\TestScanBarcode.csproj|solutionrelative:testscanbarcode\\showdataformha.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{8078BCA0-57AF-45E2-8C3F-2FBE66867637}|TestScanBarcode\\TestScanBarcode.csproj|C:\\Users\\huynh\\source\\repos\\TestScanBarcode\\testscanbarcode\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "AbsoluteMoniker": "D:0:0:{8078BCA0-57AF-45E2-8C3F-2FBE66867637}|TestScanBarcode\\TestScanBarcode.csproj|c:\\users\\huynh\\source\\repos\\testscanbarcode\\testscanbarcode\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{8078BCA0-57AF-45E2-8C3F-2FBE66867637}|TestScanBarcode\\TestScanBarcode.csproj|solutionrelative:testscanbarcode\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{8078BCA0-57AF-45E2-8C3F-2FBE66867637}|TestScanBarcode\\TestScanBarcode.csproj|C:\\Users\\huynh\\source\\repos\\TestScanBarcode\\testscanbarcode\\showdataformha.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{8078BCA0-57AF-45E2-8C3F-2FBE66867637}|TestScanBarcode\\TestScanBarcode.csproj|solutionrelative:testscanbarcode\\showdataformha.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{8078BCA0-57AF-45E2-8C3F-2FBE66867637}|TestScanBarcode\\TestScanBarcode.csproj|c:\\users\\huynh\\source\\repos\\testscanbarcode\\testscanbarcode\\showimgdata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8078BCA0-57AF-45E2-8C3F-2FBE66867637}|TestScanBarcode\\TestScanBarcode.csproj|solutionrelative:testscanbarcode\\showimgdata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8078BCA0-57AF-45E2-8C3F-2FBE66867637}|TestScanBarcode\\TestScanBarcode.csproj|C:\\Users\\huynh\\source\\repos\\TestScanBarcode\\testscanbarcode\\showdataformha.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8078BCA0-57AF-45E2-8C3F-2FBE66867637}|TestScanBarcode\\TestScanBarcode.csproj|solutionrelative:testscanbarcode\\showdataformha.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8078BCA0-57AF-45E2-8C3F-2FBE66867637}|TestScanBarcode\\TestScanBarcode.csproj|c:\\users\\huynh\\source\\repos\\testscanbarcode\\testscanbarcode\\showimgdata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{8078BCA0-57AF-45E2-8C3F-2FBE66867637}|TestScanBarcode\\TestScanBarcode.csproj|solutionrelative:testscanbarcode\\showimgdata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8078BCA0-57AF-45E2-8C3F-2FBE66867637}|TestScanBarcode\\TestScanBarcode.csproj|C:\\Users\\huynh\\source\\repos\\TestScanBarcode\\testscanbarcode\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8078BCA0-57AF-45E2-8C3F-2FBE66867637}|TestScanBarcode\\TestScanBarcode.csproj|solutionrelative:testscanbarcode\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -26,8 +34,22 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 13,
+          "SelectedChildIndex": 17,
           "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Form1.cs",
+              "DocumentMoniker": "C:\\Users\\huynh\\source\\repos\\TestScanBarcode\\TestScanBarcode\\Form1.cs",
+              "RelativeDocumentMoniker": "TestScanBarcode\\Form1.cs",
+              "ToolTip": "C:\\Users\\huynh\\source\\repos\\TestScanBarcode\\TestScanBarcode\\Form1.cs",
+              "RelativeToolTip": "TestScanBarcode\\Form1.cs",
+              "ViewState": "AgIAAFEAAAAAAAAAAAAmwPYAAAAbAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-06T06:06:52.034Z",
+              "IsPinned": true,
+              "EditorCaption": ""
+            },
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
@@ -78,33 +100,45 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 4,
+              "Title": "ShowIMGData.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\huynh\\source\\repos\\TestScanBarcode\\TestScanBarcode\\ShowIMGData.cs",
+              "RelativeDocumentMoniker": "TestScanBarcode\\ShowIMGData.cs",
+              "ToolTip": "C:\\Users\\huynh\\source\\repos\\TestScanBarcode\\TestScanBarcode\\ShowIMGData.cs [Design]",
+              "RelativeToolTip": "TestScanBarcode\\ShowIMGData.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-21T09:47:35.905Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "ShowIMGData.cs",
+              "DocumentMoniker": "C:\\Users\\huynh\\source\\repos\\TestScanBarcode\\TestScanBarcode\\ShowIMGData.cs",
+              "RelativeDocumentMoniker": "TestScanBarcode\\ShowIMGData.cs",
+              "ToolTip": "C:\\Users\\huynh\\source\\repos\\TestScanBarcode\\TestScanBarcode\\ShowIMGData.cs",
+              "RelativeToolTip": "TestScanBarcode\\ShowIMGData.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-21T09:42:09.965Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
               "Title": "ShowDataFormHa.cs",
               "DocumentMoniker": "C:\\Users\\huynh\\source\\repos\\TestScanBarcode\\TestScanBarcode\\ShowDataFormHa.cs",
               "RelativeDocumentMoniker": "TestScanBarcode\\ShowDataFormHa.cs",
               "ToolTip": "C:\\Users\\huynh\\source\\repos\\TestScanBarcode\\TestScanBarcode\\ShowDataFormHa.cs",
               "RelativeToolTip": "TestScanBarcode\\ShowDataFormHa.cs",
-              "ViewState": "AgIAAAYAAAAAAAAAAAAAABMAAAAvAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAbAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-01-16T08:01:55.532Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "Form1.cs",
-              "DocumentMoniker": "C:\\Users\\huynh\\source\\repos\\TestScanBarcode\\TestScanBarcode\\Form1.cs",
-              "RelativeDocumentMoniker": "TestScanBarcode\\Form1.cs",
-              "ToolTip": "C:\\Users\\huynh\\source\\repos\\TestScanBarcode\\TestScanBarcode\\Form1.cs",
-              "RelativeToolTip": "TestScanBarcode\\Form1.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAOkAAAAJAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-01-06T06:06:52.034Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 1,
               "Title": "Form1.cs [Design]",
               "DocumentMoniker": "C:\\Users\\huynh\\source\\repos\\TestScanBarcode\\TestScanBarcode\\Form1.cs",
               "RelativeDocumentMoniker": "TestScanBarcode\\Form1.cs",
@@ -116,14 +150,15 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 0,
               "Title": "ShowDataFormHa.cs [Design]",
               "DocumentMoniker": "C:\\Users\\huynh\\source\\repos\\TestScanBarcode\\TestScanBarcode\\ShowDataFormHa.cs",
               "RelativeDocumentMoniker": "TestScanBarcode\\ShowDataFormHa.cs",
               "ToolTip": "C:\\Users\\huynh\\source\\repos\\TestScanBarcode\\TestScanBarcode\\ShowDataFormHa.cs [Design]",
               "RelativeToolTip": "TestScanBarcode\\ShowDataFormHa.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-01-06T06:06:17.778Z"
+              "WhenOpened": "2026-01-06T06:06:17.778Z",
+              "EditorCaption": " [Design]"
             }
           ]
         },

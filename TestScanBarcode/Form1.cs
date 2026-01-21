@@ -1,5 +1,6 @@
 ﻿using AForge.Video;
 using AForge.Video.DirectShow;
+using ShowDataImg;
 using System;
 using System.Collections.Generic;
 using System.Data;
@@ -239,6 +240,13 @@ namespace TestScanBarcode
             _isReading = false;
             textOutput.Clear();
             StartCamera();
+        }
+        private void buttShowIMG_Click(object sender, EventArgs e)
+        {
+            ShowIMGData imgForm = new ShowIMGData();
+            imgForm.Show();
+            this.Hide();
+            imgForm.FormClosed += (s, args) => this.Show();
         }
     }
 }

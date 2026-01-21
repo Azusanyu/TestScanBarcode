@@ -1,0 +1,11 @@
+C:\Users\huynh\source\repos\ShowDataImg\ShowDataImg\obj\Debug\ShowDataImg.csproj.AssemblyReference.cache
+C:\Users\huynh\source\repos\ShowDataImg\ShowDataImg\obj\Debug\ShowDataImg.Properties.Resources.resources
+C:\Users\huynh\source\repos\ShowDataImg\ShowDataImg\obj\Debug\ShowDataImg.csproj.GenerateResource.cache
+C:\Users\huynh\source\repos\ShowDataImg\ShowDataImg\obj\Debug\ShowDataImg.csproj.CoreCompileInputs.cache
+C:\Users\huynh\source\repos\ShowDataImg\ShowDataImg\bin\Debug\ShowDataImg.exe.config
+C:\Users\huynh\source\repos\ShowDataImg\ShowDataImg\bin\Debug\ShowDataImg.exe
+C:\Users\huynh\source\repos\ShowDataImg\ShowDataImg\bin\Debug\ShowDataImg.pdb
+C:\Users\huynh\source\repos\ShowDataImg\ShowDataImg\obj\Debug\ShowDataImg.exe
+C:\Users\huynh\source\repos\ShowDataImg\ShowDataImg\obj\Debug\ShowDataImg.pdb
+C:\Users\huynh\source\repos\ShowDataImg\ShowDataImg\obj\Debug\ShowDataImg.exe.config
+C:\Users\huynh\source\repos\ShowDataImg\ShowDataImg\obj\Debug\ShowDataImg.ShowIMGData.resources

@@ -42,3 +42,7 @@ C:\Users\huynh\source\repos\TestScanBarcode\TestScanBarcode\bin\Debug\DevExpress
 C:\Users\huynh\source\repos\TestScanBarcode\TestScanBarcode\bin\Debug\DevExpress.Pdf.v24.2.Drawing.xml
 C:\Users\huynh\source\repos\TestScanBarcode\TestScanBarcode\obj\Debug\TestScanBarcode.ShowDataFormHa.resources
 C:\Users\huynh\source\repos\TestScanBarcode\TestScanBarcode\obj\Debug\TestScanBarcode.exe.licenses
+C:\Users\huynh\source\repos\TestScanBarcode\TestScanBarcode\bin\Debug\ja-JP\TestScanBarcode.resources.dll
+C:\Users\huynh\source\repos\TestScanBarcode\TestScanBarcode\obj\Debug\TestScanBarcode.Form1.ja-JP.resources
+C:\Users\huynh\source\repos\TestScanBarcode\TestScanBarcode\obj\Debug\ja-JP\TestScanBarcode.resources.dll
+C:\Users\huynh\source\repos\TestScanBarcode\TestScanBarcode\obj\Debug\ShowDataImg.ShowIMGData.resources
